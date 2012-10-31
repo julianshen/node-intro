@@ -1,74 +1,133 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Node-intro : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Node-intro</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/julianshen/node-intro">View on GitHub</a>
-
-          <h1 id="project_title">Node-intro</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/julianshen/node-intro/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/julianshen/node-intro/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Node-intro maintained by <a href="https://github.com/julianshen">julianshen</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Introduction to Node.js</title>
+    <meta name="author" content="Julian Shen" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
     
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
 
-  </body>
+<!--
+    For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+	<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+		<h1>Introduction to <strong>node.js</strong></h1>
+		<span class="footnote"><sup>*</sup>U22000 Julian Shen</span>
+	</div>
+	<div id="whynodejs" class="step singletitle" data-x="1500" data-y="1500" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+		What's node.js?
+	</div>
+    <div id="whynodejsans" class="step" data-x="2100" data-y="3100" data-rotate-y="-90">
+    	<ul>
+    		<li><sup>*</sup> It's not a new language</li>
+    		<li><sup>*</sup> It's an ecosystem with javascript</li>
+    		<li><sup>*</sup> Built upon Google V8 engine</li>
+    		<li><sup>*</sup> Server side javascript<li>
+    		<li><sup>*</sup> Not just server side javascript</li>
+    	</ul>
+    </div>
+	<div id="whynodejsx" class="step" data-x="3100" data-y="3100" data-z="1500" data-rotate-x="90" data-rotate-y="30">
+    	V8 + Common Javascript APIs
+    </div>
+    <div id="whynodejsy" class="step" data-x="4100" data-y="5100" data-z="-1500" data-rotate-x="90" data-rotate-y="30">
+    	<img src="img/Slide1.png" />
+    </div>
+    <div id="whyjavascript" class="step singletile" data-x="-500" data-y="1500" data-z="100" data-rotate-x="40" data-rotate-y="10" data-scale="2">
+		Why server side javascript?
+	</div>
+	<div id="whyjavascriptans" class="step" data-x="-3000" data-y="0">
+		<ul>
+    		<li><sup>*</sup> Popular langauge</li>
+    		<li><sup>*</sup> Easy to learn</li>
+    		<li><sup>*</sup> Lot of front end developers</li>
+    		<li><sup>*</sup> Develop client/server in same manner<li>
+    	</ul>
+	</div>
+	<div id="whyjavascriptans2" class="step" data-x="-3000" data-y="-1300" data-z="-100" data-rotate-z="60" data-rotate-y="70">
+		<ul>
+    		<li><sup>*</sup> SSJS is not a new concept</li>
+    		<li><sup>*</sup> Netscape tried but failed</li>
+    		<li><sup>*</sup> V8 is fast now</li>
+    	</ul>
+	</div>
+	<div id="characteristic" class="step singletitle" data-z="-1000">
+		Characteristic
+	</div>
+	<div id="characteristic2" class="step singletitle" data-z="-2000" data-y="1000">		
+		<ul>
+    		<li><sup>*</sup> Simple and efficient</li>
+    		<li><sup>*</sup> No multithread</li>
+    		<li><sup>*</sup> Event driven/Non blocking</li>
+    		<li><sup>*</sup> Young and growing </li>
+    	</ul>
+	</div>
+	<div id="characteristic3" class="step singletitle" data-z="-1500" data-y="-2000" data-x="4000">
+		<h1 align="center"><b>Simple and efficient</b></h1>
+		<br>
+		<a href="http://venturebeat.com/2011/08/16/linkedin-node/">LinkedIn uses node.js to archive higher performance with less servers</a>
+	</div>
+	<div id="characteristic4" class="step singletitle" data-z="-2500" data-y="-1000" data-x="4000">
+		<h1 align="center"><b>Young and growing</b></h1>
+		<br>
+		<ul>
+    		<li><sup>*</sup> Version evolves very fast (v0.8.14)</li>
+    		<li><sup>*</sup> Growing modules on npm repository</li>
+    	</ul>
+	</div>
+	<div id="using" class="step singletitle" data-z="-1000" data-x="-1000" data-y="-1000" data-rotate-y="70">
+		Using node.js
+	</div>
+	<div id="whatversion" class="step singletitle" data-z="-2000" data-x="-2000" data-rotate-y="30">
+		What version should I install?
+	</div>
+	<div id="Nvm" class="step singletitle" data-z="-1000" data-y="-2000">
+		<a href="https://github.com/creationix/nvm">NVM (Node Version Manager)</a>
+	</div>
+	<div id="UsingNVM" class="step singletitle" data-z="-2500" data-y="-1000" data-x="-4000">
+		<h1 align="center"><b>Using node with NVM</b></h1>
+		<br>
+		<ul>
+    		<li><sup>*</sup> "nvm install 0.8.14"</li>
+    		<li><sup>*</sup> "nvm use 0.8.14"</li>
+    		<li><sup>*</sup> "nvm ls"</li>
+    	</ul>
+	</div>
+	<div id="using" class="step singletitle" data-z="-2000" data-x="-1000" data-y="-3000" data-rotate-y="-70">
+		First example - hello node
+	</div>
+</div>
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
 </html>
