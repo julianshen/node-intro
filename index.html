@@ -110,7 +110,7 @@
 	<div id="exmaple" class="step singletitle" data-z="-100" data-x="1000" data-y="-3000" data-rotate-y="-70">
 		First example - <a href="https://github.com/julianshen/node-intro/blob/gh-pages/ex1.js">hello node</a>
 	</div>
-    <div id="exmaple2" class="step singletitle" data-z="-100" data-x="1000" data-y="-3000" data-rotate-y="-70">
+    <div id="exmaple2" class="step singletitle" data-z="-1000" data-x="-1000" data-y="-3000" data-rotate-y="-70">
         <h1 align="center"><b>First, simple, HTTP server</b></h1>
         <br>
         <ul>
@@ -118,6 +118,112 @@
             <li><sup>*</sup> Both client and server</li>
             <li><sup>*</sup> <a href="https://github.com/julianshen/node-intro/blob/gh-pages/ex2.js">example</a></li>
         </ul>
+    </div>
+    <div id="waytoosimple" class="step singletitle" data-z="-150" data-x="1500" data-y="-4500" data-rotate-y="-170">
+        Way too simple?
+    </div>
+    <div id="great" class="step singletitle" data-z="-150" data-x="2500" data-y="-3500" data-rotate-y="180">
+        Making good use of existed stuffs - Module
+    </div>
+    <div id="NPM" class="step singletitle" data-z="-510" data-x="3500" data-y="-2500" data-rotate-x="180">
+        <a href="https://npmjs.org/">NPM : Node Packaged Modules</a>
+    </div>
+    <div id="CONNECT" class="step singletitle" data-x="-1500" data-y="-3500" data-scale="3">
+        <h1 align="center"><b>Use "connect" to enhance server</b></h1>
+        <span style="font-size: 26px;">Install connect: <i>"npm i connect"</i></span><br/>
+        <span style="font-size: 26px;">Where does module go : <i>"node_modules"</i></span><br/>
+        <span style="font-size: 26px;">Dependiencies :</span><br/>
+        <span style="font-size: 12px;">
+            
+        <pre>        
+    connect@2.6.1 node_modules/connect
+    ├── fresh@0.1.0
+    ├── pause@0.0.1
+    ├── bytes@0.1.0
+    ├── cookie-signature@0.0.1
+    ├── cookie@0.0.4
+    ├── crc@0.2.0
+    ├── debug@0.7.0
+    ├── qs@0.5.1
+    ├── formidable@1.0.11
+    └── send@0.1.0 (mime@1.2.6, range-parser@0.0.4)
+        </pre>
+        </span>
+    </div>
+    <div id="connectserver" class="step singletitle" data-x="-3500" data-y="4000" data-scale="3">
+        <h1 align="center"><b>Let's try some codes</b></h1><br />
+        <code style="font-size: 18px;">
+            <pre>
+                connect = require('connect');
+
+                var app = connect()
+                    .use(connect.logger('dev'))
+                    .use(connect.static('public'))
+                    .use(function(req, res){
+                        res.end('hello world\n');
+                })
+                .listen(3000);
+            </pre>
+        </code>
+    </div>
+    <div id="whatdifferent" class="step singletitle" data-x="-100" data-y="4000" data-scale="3">
+        <h1 align="center"><b>What's different</b></h1><br />
+        <br>
+        <ul>
+            <li><sup>*</sup> "require" the module</li>
+            <li><sup>*</sup> support static files</li>
+        </ul>
+    </div>
+    <div id="Notenough" class="step singletitle" data-x="2500" data-y="4000" data-scale="1">
+        <h1 align="center"><b>Not enough?</b></h1>
+    </div>
+    <div id="expressjs" class="step singletitle" data-x="4000" data-y="4000" data-scale="1">
+        <h1 align="center"><b><a href="http://expressjs.com/">Express.js</a></b></h1>
+    </div>
+    <div id="installexpressjs" class="step singletitle" data-x="6000" data-y="1000" data-scale="1">
+        <h1 align="center"><b>Install Express.js</b></h1>
+        <ul>
+            <li><sup>*</sup> npm install express -g</li>
+            <li><sup>*</sup> express my_project</li>
+        </ul>
+    </div>
+    <div id="More" class="step singletitle" data-x="4500" data-y="1500" data-rotate-x="-40" data-rotate-y="10" data-scale="3">
+        <h1 align="center"><b><span class="have">Give me </span><span class="you">more!!!</span></b></h1>
+    </div>
+    <div id="visit" class="step singletitle" data-x="6500" data-y="5500" data-rotate-x="-90" data-rotate-y="10" data-scale="1">
+        Visit <a href="https://npmjs.org/"><img src="https://npmjs.org/static/npm.png" /></a>
+    </div>
+    <div id="share" class="step singletitle" data-x="-6500" data-y="-5500" data-rotate-x="90" data-rotate-y="10" data-scale="1">
+        <h1 align="center"><b>Can I share client side codes?</b></h1>
+        <ul>
+            <li><sup>*</sup> DOM is not available</li>
+            <li><sup>*</sup> Some client module such as <a href="http://underscorejs.org/">unsderscore.js</a> can be used in server side as well</li>
+        </ul>
+    </div>
+    <div id="host" class="step singletitle" data-x="-6500" data-y="-3500" data-rotate-x="180" data-rotate-y="10" data-scale="1">
+        <h1 align="center"><b>Where can I host my server?</b></h1>
+        <ul>
+            <li><sup>*</sup> <a href="http://heroku.com/">Heroku</a></li>
+            <li><sup>*</sup> <a href="http://nodejitsu.com/">nodejitsu</a></li>
+        </ul>
+    </div>
+    <div id="debug" class="step singletitle" data-x="-6500" data-y="1500" data-rotate-x="-40" data-rotate-y="10" data-scale="3">
+        <h1 align="center"><b>Debug</b></h1>
+    </div>
+    <div id="installdebug" class="step" data-x="7100" data-y="5100" data-z="-1500" data-rotate-x="90" data-rotate-y="30">
+        Install <a href="http://code.google.com/p/chromedevtools/">Chrome dev tools</a>
+        <img src="img/1.png" />
+    </div>
+    <div id="installdebug2" class="step" data-x="7100" data-y="7100" data-z="-1000" data-rotate-x="90" data-rotate-y="30">
+        <h1 align="center"><b>Debug</b></h1>
+        <ul>
+            <li><sup>*</sup> Run "node --debug ex2.js"</li>
+            <li><sup>*</sup> Create a debug configuration (standalone V8 VM)</li>
+            <li><sup>*</sup> Set your break point</li>
+        </ul>
+    </div>
+    <div id="installdebug3" class="step" data-x="7100" data-y="9100" data-z="-500" data-rotate-x="90" data-rotate-y="30">
+        <img src="img/2.png" />
     </div>
 </div>
 
